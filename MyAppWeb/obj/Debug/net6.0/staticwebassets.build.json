@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PJgutKZsfjK2EBMDjeEXSyvpHeYS//LujxNNPMTLu/I=",
+  "Hash": "BztArifDusYhxin9l4e0hGkbjd1HUZzdkt4MFIIq1BE=",
   "Source": "MyAppWeb",
   "BasePath": "_content/MyAppWeb",
   "Mode": "Default",
@@ -1103,6 +1103,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\dell\\source\\repos\\MyApp\\MyAppWeb\\wwwroot\\ProductImage\\630d98e4-695d-477b-b99c-5f159afd71e5-i1.png",
+      "SourceId": "MyAppWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dell\\source\\repos\\MyApp\\MyAppWeb\\wwwroot\\",
+      "BasePath": "_content/MyAppWeb",
+      "RelativePath": "ProductImage/630d98e4-695d-477b-b99c-5f159afd71e5-i1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductImage\\630d98e4-695d-477b-b99c-5f159afd71e5-i1.png"
+    },
+    {
+      "Identity": "C:\\Users\\dell\\source\\repos\\MyApp\\MyAppWeb\\wwwroot\\ProductImage\\90e2b19e-4f92-4ba6-a7ec-c0d46ad04690-8ad220552dfb68ca4ed6d2d0da6d2cba.jpg",
+      "SourceId": "MyAppWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\dell\\source\\repos\\MyApp\\MyAppWeb\\wwwroot\\",
+      "BasePath": "_content/MyAppWeb",
+      "RelativePath": "ProductImage/90e2b19e-4f92-4ba6-a7ec-c0d46ad04690-8ad220552dfb68ca4ed6d2d0da6d2cba.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductImage\\90e2b19e-4f92-4ba6-a7ec-c0d46ad04690-8ad220552dfb68ca4ed6d2d0da6d2cba.jpg"
     }
   ]
 }

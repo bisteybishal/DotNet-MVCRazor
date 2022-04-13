@@ -1,4 +1,5 @@
-﻿using MyApp.Models;
+﻿using Microsoft.AspNetCore.Http;
+using MyApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,5 +12,7 @@ namespace MyAppModels.ViewModels
     {
         public Category category { get; set; } = new Category();
         public IEnumerable<Category> categories { get; set; } = new List<Category>();
+        public IFormFile Photo { get; set; }
+        public string ProductImageurl { get; set; }
     }
 }

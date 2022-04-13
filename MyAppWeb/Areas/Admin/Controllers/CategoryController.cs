@@ -13,6 +13,7 @@ namespace MyAppWeb.Controllers
         {
             _unitofWork =unitofwork;
         }
+
         public IActionResult Index()
         {
             CategoryVM categoryVM = new CategoryVM();
@@ -77,6 +78,7 @@ namespace MyAppWeb.Controllers
                 return NotFound();
             }
             var category = _unitofWork.Category.GetT(x => x.Id == Id);
+            
             if (category == null)
             {
                 return NotFound();
