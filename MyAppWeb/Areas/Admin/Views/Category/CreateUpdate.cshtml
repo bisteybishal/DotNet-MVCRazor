@@ -1,0 +1,39 @@
+﻿@model MyAppModels.ViewModels.CategoryVM
+@{
+    ViewData["Title"] = "Edit";
+}
+<form method="post">
+    <input type="hidden" asp-for="category.Id"/>
+    <div class="border p-3 mt-3">
+        <div class="row pb-2">
+            <h4 class="text-primary">@((Model.category==null||Model.category.Id==0)?"Create":"Update")  Category</h4>
+            <hr/>
+   </div>
+    <div class="row mb-3">
+        <label asp-for="category.Name"></label>
+        <input  asp-for="category.Name" class="form-control"/>
+        <span asp-validation-for="category.Name" class="text-primary"></span>
+    </div>
+    <div class="row mb-3">
+        <label asp-for="category.DisplayOrder"></label>
+        <input  asp-for="category.DisplayOrder" class="form-control"/>
+          <span asp-validation-for="category.DisplayOrder" class="text-primary"></span>
+    </div>
+        @if (Model.category == null || Model.category.Id == 0)
+        {
+            <button class="btn btn-primary" type="submit">Create</button>
+        }
+        else
+        {
+             <button class="btn btn-primary" type="submit">Update</button>
+        }
+       
+    </div>
+    <a asp-action="Index" asp-controller="Category">Back</a>
+</form>
+@section Scripts{
+@{
+    <partial name="_ValidationScriptsPartial"/>
+
+}
+}

@@ -1,0 +1,15 @@
+C:\Users\dell\source\repos\MyApp\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\dell\source\repos\MyApp\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dell\source\repos\MyApp\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\dell\source\repos\MyApp\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\dell\source\repos\MyApp\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\dell\source\repos\MyApp\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.deps.json
+C:\Users\dell\source\repos\MyApp\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\dell\source\repos\MyApp\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\dell\source\repos\MyApp\DataAccessLayer\bin\Debug\net6.0\MyAppModel.dll
+C:\Users\dell\source\repos\MyApp\DataAccessLayer\bin\Debug\net6.0\MyAppModel.pdb
+C:\Users\dell\source\repos\MyApp\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CopyComplete
+C:\Users\dell\source\repos\MyApp\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.dll
+C:\Users\dell\source\repos\MyApp\DataAccessLayer\obj\Debug\net6.0\refint\DataAccessLayer.dll
+C:\Users\dell\source\repos\MyApp\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\dell\source\repos\MyApp\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll

@@ -1,0 +1,39 @@
+﻿@using MyAppModel
+@model Product
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<form method="post">
+    <div class="border p-3 mt-3">
+        <div class="row pb-2">
+            <h3 class="text-primary">Delete Product</h3>
+            <hr/>
+   </div>
+   <input type="hidden" asp-for="Id"/>
+   <div asp-validation-summary=All></div>
+    <div class="row mb-3">
+        <label asp-for="ProductName"></label>
+        <input disabled asp-for="ProductName" class="form-control"/>
+        <span asp-validation-for="ProductName" class="text-primary"></span>
+    </div>
+    <div class="row mb-3">
+        <label asp-for="Price"></label>
+        <input disabled asp-for="Price" class="form-control"/>
+          <span asp-validation-for="Price" class="text-primary"></span>
+    </div>
+    <div class="row mb-3">
+        <label asp-for="Description"></label>
+        <input disabled asp-for="Description" class="form-control"/>
+          <span asp-validation-for="Description" class="text-primary"></span>
+    </div>
+    <div class="row mb-3">
+        <label asp-for="imageurl"></label>
+        <input disabled asp-for="imageurl" class="form-control"/>
+          <span asp-validation-for="imageurl" class="text-primary"></span>
+    </div>
+    <button class="btn btn-danger" type="submit">Delete</button>
+    </div>
+    <a asp-action="Index" asp-controller="Product">Back</a>
+</form>

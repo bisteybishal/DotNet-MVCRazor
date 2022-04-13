@@ -1,0 +1,17 @@
+C:\Users\dell\source\repos\MyApp\Infrastructure\bin\Debug\net6.0\Infrastructure.deps.json
+C:\Users\dell\source\repos\MyApp\Infrastructure\bin\Debug\net6.0\Infrastructure.dll
+C:\Users\dell\source\repos\MyApp\Infrastructure\bin\Debug\net6.0\Infrastructure.pdb
+C:\Users\dell\source\repos\MyApp\Infrastructure\bin\Debug\net6.0\MyApp.DataAccessLayer.dll
+C:\Users\dell\source\repos\MyApp\Infrastructure\bin\Debug\net6.0\MyAppModel.dll
+C:\Users\dell\source\repos\MyApp\Infrastructure\bin\Debug\net6.0\MyApp.DataAccessLayer.pdb
+C:\Users\dell\source\repos\MyApp\Infrastructure\bin\Debug\net6.0\MyAppModel.pdb
+C:\Users\dell\source\repos\MyApp\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.AssemblyReference.cache
+C:\Users\dell\source\repos\MyApp\Infrastructure\obj\Debug\net6.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dell\source\repos\MyApp\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\dell\source\repos\MyApp\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfo.cs
+C:\Users\dell\source\repos\MyApp\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\dell\source\repos\MyApp\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CopyComplete
+C:\Users\dell\source\repos\MyApp\Infrastructure\obj\Debug\net6.0\Infrastructure.dll
+C:\Users\dell\source\repos\MyApp\Infrastructure\obj\Debug\net6.0\refint\Infrastructure.dll
+C:\Users\dell\source\repos\MyApp\Infrastructure\obj\Debug\net6.0\Infrastructure.pdb
+C:\Users\dell\source\repos\MyApp\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll
