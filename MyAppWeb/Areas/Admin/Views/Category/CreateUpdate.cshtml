@@ -1,7 +1,5 @@
 ﻿@model MyAppModels.ViewModels.CategoryVM
-@{
-    ViewData["Title"] = "Edit";
-}
+
 <form method="post" enctype="multipart/form-data">
     <input type="hidden" asp-for="category.Id"/>
     <div class="border p-3 mt-3">
@@ -19,11 +17,7 @@
         <input  asp-for="category.DisplayOrder" class="form-control"/>
           <span asp-validation-for="category.DisplayOrder" class="text-primary"></span>
     </div>
-    @*<div class="row mb-3">
-       
-        <Input asp-for="Photo"   class="form-select"/>
-        
-    </div>*@
+    
         @if (Model.category == null || Model.category.Id == 0)
         {
             <button class="btn btn-primary" type="submit">Create</button>

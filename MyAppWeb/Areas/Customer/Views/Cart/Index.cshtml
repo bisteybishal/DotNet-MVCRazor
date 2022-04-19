@@ -1,0 +1,60 @@
+﻿
+@model MyAppModels.ViewModels.CartVM
+
+<div class="container-fluid mt-12 mb-5">
+    <div class="d-flex justify-content-center row">
+        <div class="col-md-12">
+            <div class="p-2">
+                <h4>Shopping cart</h4>
+                <div class="d-flex flex-row  pull-right"><span class="mr-1">Sort by:</span><span class="mr-1 font-weight-bold">Price</span><i class="fa fa-angle-down"></i></div>
+            </div>
+            <hr />
+            @foreach(var item in Model.Listofcart)
+            {
+            <div class="d-flex flex-row justify-content-between align-items-center p-2 bg-white mt-4 px-6 rounded">
+                <div class="mr-1"><img class="rounded" src="@item.Product.imageurl" width="100"></div>
+                <div class="d-flex flex-column align-items-center product-details col-md-3"><span class="font-weight-bold">@item.Product.ProductName</span>
+                    <div class="d-flex flex-row product-desc">
+                        <div class="size mr-1"><span class="text-grey">@Html.Raw(@item.Product.Description)</span></div>
+                        
+                    </div>
+                </div>
+                 <div>
+                    <h5 class="text-grey">@item.Product.Price</h5>
+                    <h5 class="text-grey mt-1 mr-1 ml-1">@item.Count</h5>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                    <button asp-action="plus" asp-route-id="@item.Id" class="btn btn px-2">
+                       <i class="bi bi-plus-lg"></i>
+                    </button>
+                    <button asp-action="minus" asp-route-id="@item.Id" class="btn btn px-2">
+                       <i class="bi bi-dash-lg"></i>
+                    </button>
+                     <button asp-action="delete" asp-route-id="@item.Id" class="btn btn px-2">
+                        <i class="bi bi-x-square"></i>
+                    </button>
+                                 
+                   
+                </div>
+               
+                          
+            </div>
+            }
+            <div class="col-md-3 col-lg-3 col-xl-2 d-flex"><h4>Total</h4></div>
+            <div class="card mb-4">
+
+                <div class="card-body p-4 d-flex flex-row">
+                    <div class="form-outline flex-fill">
+                        <label class="form-label">Total(Rupees)</label>
+                    </div>
+                        <label class="ms-3">@Model.Total.ToString("c")</label>
+                </div>               
+              <div class="  mt-3 p-2 bg-white rounded"><button class="btn btn-warning" type="button">Proceed to Pay</button>
+              </div>  
+          </div>
+        </div>
+       
+    </div>
+</div>
+           
+         

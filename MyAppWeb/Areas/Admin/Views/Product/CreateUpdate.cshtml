@@ -1,7 +1,9 @@
-﻿@model MyAppModels.ViewModels.ProductVM
+﻿
+@model MyAppModels.ViewModels.ProductVM
 
 <form method="post" asp-action="CreateUpdate" enctype="multipart/form-data">
     <input type="hidden" asp-for="Product.Id"/>
+    <input type="hidden" asp-for="Product.imageurl"/>
     <div class="border p-3 mt-3">
         <div class="row pb-2">
            <h4 class="text-primary">@((Model.Product==null||Model.Product.Id==0)?"Create":"Update")Product</h4>
@@ -23,8 +25,8 @@
           <span asp-validation-for="Product.Description" class="text-primary"></span>
     </div>
     <div class="row mb-3">
-       
-        <Input asp-for="Photo"   class="form-select"/>
+       <label asp-for="Product.imageurl" id="myfile"></label>
+        <Input asp-for="Photo"   class="form-control"/>
         
     </div>
     <div class="row mb-3">

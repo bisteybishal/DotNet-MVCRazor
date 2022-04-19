@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 namespace MyAppModel
 {
    public  class Product
+    //all the items are database column name
     {
         [Key]
         public int Id { get; set; }

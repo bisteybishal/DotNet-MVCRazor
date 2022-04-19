@@ -75,7 +75,9 @@ namespace MyAppWeb.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult CreateUpdate(ProductVM vm)
         {
-           if (ModelState.IsValid)
+            
+
+            if (ModelState.IsValid)
             {
                 String fileName = String.Empty;
                 if (vm.Photo != null)
@@ -84,9 +86,21 @@ namespace MyAppWeb.Areas.Admin.Controllers
                     String uploadDir = Path.Combine(_hostingEnvironment.WebRootPath, "ProductImage");
                     fileName = Guid.NewGuid().ToString() + "-" + vm.Photo.FileName;
                     String filePath = Path.Combine(uploadDir, fileName);
+
+
+                    //if (vm.Product.imageurl != null)
+                    //{
+                    //    var OldImagePath = Path.Combine(_hostingEnvironment.WebRootPath, vm.Product.imageurl.TrimStart('\\'));
+                    //    if (System.IO.File.Exists(OldImagePath))
+                    //    {
+
+                    //        System.IO.File.Delete(OldImagePath);
+
+                    //    }
+                    //}
                     using (var fileStream = new FileStream(filePath, FileMode.Create))
                     {
-                        vm.Photo.CopyTo(fileStream);
+                     vm.Photo.CopyTo(fileStream);
                     }
                     vm.Product.imageurl = @"\ProductImage\" + fileName;
                 }
@@ -120,20 +134,32 @@ namespace MyAppWeb.Areas.Admin.Controllers
         //    }
         //    return View(product);
         //}
-        //[HttpPost, ActionName("Delete")]
-        //[ValidateAntiForgeryToken]
-        //public IActionResult DeleteData(int? id)
-        //{
-        //    var product = _unitofwork.Product.GetT(x => x.Id == id);
-        //    if (product == null)
-        //    {
-        //        return NotFound();
-        //    }
-        //    _unitofwork.Product.Delete(product);
-        //    _unitofwork.Save();
-        //    TempData["success"] = "Deleted Successfully!!!.";
-        //    return RedirectToAction("Index");
-        //}
+        #region DeleteAPICALL
+        [HttpDelete]
+        public IActionResult Delete(int? id)
+        {
+            var product = _unitofwork.Product.GetT(x => x.Id == id);
+            if (product == null)
+            {
+                return Json(new { success = false, message = "Try again--- Something went wrong!!!!!!!!!!!!!" });
+            }
+            else
+            {
+                var OldImagePath = Path.Combine(_hostingEnvironment.WebRootPath, product.imageurl.TrimStart('\\'));
+                if (System.IO.File.Exists(OldImagePath))
+                {
+
+                    System.IO.File.Delete(OldImagePath);
+
+                }
+                _unitofwork.Product.Delete(product);
+                _unitofwork.Save();
+                return Json(new { success = true, message = "Sucessfully Deleted" });
+            }           
+           
+            
+        }
+        #endregion
     }
 
 }

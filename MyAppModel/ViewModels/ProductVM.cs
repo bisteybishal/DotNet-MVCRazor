@@ -18,8 +18,7 @@ public class ProductVM
         
         [ValidateNever]
         public IEnumerable<SelectListItem> Categories { get; set; }
-
-            
+        [ValidateNever]
         public IFormFile Photo { get; set; }
     }
 

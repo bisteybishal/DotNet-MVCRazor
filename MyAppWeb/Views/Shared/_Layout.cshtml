@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/MyAppWeb.styles.css" asp-append-version="true" />
      <link rel="stylesheet" href="~/css/quartztheme.css" />
+     <link rel="stylesheet" href="~/css/Cart.css" />
+
 
       <link rel="stylesheet" href="///cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" />
        
@@ -36,10 +38,13 @@
         <li class="nav-item">
            <a class="nav-link text-dark" asp-area="Admin" asp-controller="Product" asp-action="Index">Product</a>
         </li>
-        @*<li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+        <li class="nav-item">
+           <a class="nav-link text-dark" asp-area="Customer" asp-action="Index" asp-controller="Cart"><i class="bi bi-cart"></i></a>
         </li>
-        <li class="nav-item dropdown">
+        @*<li class="nav-item">
+          <a class="nav-link" asp-area="Customer" asp-controller="Cart" asp-action="Index" ><i class="bi bi-cart"> Cart</i></a>
+        </li>*@
+        @*<li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
           <div class="dropdown-menu">
             <a class="dropdown-item" href="#">Action</a>
@@ -50,7 +55,8 @@
           </div>
         </li>*@
       </ul>
-     @* <form class="d-flex">
+      <partial name="_Loginpartial" />
+    @* <form class="d-flex">
         <input class="form-control me-sm-2" type="text" placeholder="Search">
         <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
       </form>*@
@@ -94,10 +100,12 @@
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-       <script src="~/js/site.js" asp-append-version="true"></script>
-       @*<script src="sweetalert2.all.min.js"></script>*@
+    <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="//cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
